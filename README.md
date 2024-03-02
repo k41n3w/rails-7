@@ -1,24 +1,14 @@
-# README
+# Projeto Rails 7 Ruby 2.3.0
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Para se utilizado como base futuramente.
 
-Things you may want to cover:
+Copie os arquivos e substitua o nome do projeto pelo seu.
 
-* Ruby version
+Logo após:
 
-* System dependencies
+```ruby
+docker-compose build
+docker-compose up
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ao acessar o localhost:3000 no navegador a primeira rode a migration.
