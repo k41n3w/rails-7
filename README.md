@@ -2,6 +2,7 @@
 
 Para se utilizado como base futuramente.
 
+Link para o projeto: https://fly.io/apps/rails-7
 
 ---
 
