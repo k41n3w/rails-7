@@ -2,13 +2,36 @@
 
 Para se utilizado como base futuramente.
 
+
+---
+
+## Uso local:
+
 Copie os arquivos e substitua o nome do projeto pelo seu.
 
 Logo após:
 
 ```ruby
-docker-compose build
+# builde o projeto
+docker-compose -f Dockerfile.dev build
+
+# execute o projeto
 docker-compose up
 ```
 
 Ao acessar o localhost:3000 no navegador a primeira rode a migration.
+
+---
+
+## Caso queira fazer o deploy no https://fly.io/
+
+### instale o cli no MAC OS
+`brew install flyctl`
+
+### faça login no Fly.io
+`fly auth login`
+
+### faça deploy no Fly.io
+`fly launch`
+
+Para esse passo né necessário antes ter seu projeto buildado localmente, eventualmente isso vai gerar necessidade de instalação de pacotes adicionais na sua máquina local, exemplo: precisa instalar o Postgres.
