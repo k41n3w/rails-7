@@ -13,3 +13,75 @@
  *= require_tree .
  *= require_self
  */
+
+/* app/assets/stylesheets/portfolio.css */
+/* Coloque isso em app/assets/stylesheets/portfolio.css */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header, .footer {
+  background-color: #333; /* Preto suave */
+  color: #ffd700; /* Amarelo */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1, .footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.about-me, .my-work {
+  padding: 40px 20px;
+  background-color: #f4f4f4; /* Cinza claro para contraste */
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.project {
+  background-color: #fff;
+  border: 2px solid #ffd700; /* Amarelo */
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  padding: 15px;
+  color: #333;
+}
+
+.project-info h3 {
+  color: #007bff; /* Azul para destaque */
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+.project:hover .project-info {
+  background-color: #ffd700; /* Amarelo */
+  color: #333;
+}
+
+.project.active .project-info {
+  transition: background-color 0.5s ease-in-out;
+}
