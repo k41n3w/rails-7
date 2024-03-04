@@ -14,7 +14,7 @@ Logo após:
 
 ```ruby
 # builde o projeto
-docker-compose -f Dockerfile.dev build
+docker-compose -f build
 
 # execute o projeto
 docker-compose up
